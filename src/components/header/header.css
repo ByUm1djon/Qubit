@@ -1,0 +1,269 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;border-bottom: 1px solid #e0e0e0;
+    height: 65px;
+    background-color:  #ffffff;
+
+}
+
+.navbar-logo {
+    width: 80px;
+    height: 25px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.navbar-links li {
+    font-size: 1rem;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #555;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-button {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6200ea;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 20px;
+}
+
+.navbar-button:hover {
+    background-color: #4500b5;
+}
+
+.navbar-login {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-right: 30px;
+    padding-right: 10px;
+}
+.section {
+    background-image: url('./section.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1500px;
+    height: 650px;
+    margin-left: -12px;
+
+}
+.header {
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.text-content h1 span {
+    color: #6751db;
+}
+
+.form-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.ecommerce-section {
+    font-family: Arial, sans-serif;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+
+.txt-1{
+    font-weight: bold;
+}
+.text-content h1 span {
+    color: #6751db;
+    font-weight: bold;
+}
+.p-txt{
+    margin-top: 30px;
+}
+
+
+.form-container input {
+    width: 280px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border:none;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.form-container input::placeholder{
+    padding: 10px;
+}
+
+.btn-1 {
+    width: 180px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    margin-left: -60px;
+    background-color: #6751db;
+    border: none;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.btn-1:hover{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-actions {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .section .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .form-container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px 0;
+    }
+
+    .navbar-actions {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .navbar-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        margin-right: 0;
+        margin-top: 5px;
+    }
+
+    .navbar-login {
+        font-size: 0.875rem;
+        margin-right: 0;
+    }
+
+    .section {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .form-container {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form-container input {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 25px;
+    }
+
+    .btn-1 {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 25px;
+    }
+}
